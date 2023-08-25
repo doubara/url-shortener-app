@@ -23,6 +23,7 @@
 }
 .social_icons{
     display: flex;
+    margin: 1rem auto;
 }
 .social_icons > *{
     margin: 0px .5rem;
@@ -35,5 +36,8 @@
     }
     .logoContainer{
         margin-right: 3rem;
+    }
+    .social_icons{
+        margin: 1rem 0px;
     }
 }

@@ -1,16 +1,18 @@
 .action_article{
     min-height: 25vh;
     margin-inline: auto;
-    border: 1px solid red;
     background-image: url(../../images/bg-shorten-desktop.svg);
     background-color: rgb(92, 67, 116);
     background-repeat: no-repeat;
     background-size: 100%;
     text-align: center;
     padding-top: calc(25vh/2.5);
+    padding-bottom: 2rem;
 }
 .action_article h3{
-    padding-bottom: .5rem;
+    padding-bottom: 1rem;
+    color: white;
+    font-size: 1.5rem;
 }
 @media (max-width: 400px) {
     .action_article{

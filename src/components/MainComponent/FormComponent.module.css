@@ -48,6 +48,15 @@
 .form_button:hover{
     background-color: rgb(151, 204, 211);
 }
+.form_button{
+    width: 100%;
+    padding: 1rem;
+}
+.ovalContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* @media (max-width: 800px){
     .form{
         flex-direction: column;

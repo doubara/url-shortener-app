@@ -7,7 +7,7 @@ import customizable_img from '../../images/icon-fully-customizable.svg'
 
 const TestimonialCard = (props)=>{
     const imgObject = {brand_img, records_img, customizable_img}
-    const classname = props.classname
+    // const classname = props.classname
 return <div className={`${style.testimonial_card}`}>
         <div className={style.card_img_container}>
             {/* <img src={props.value.img} alt=""/> */}

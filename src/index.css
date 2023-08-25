@@ -10,7 +10,7 @@
 :root{
   /* primary colors */
   --button-cl: hsl(180, 66%, 49%);
-  --text-cl: hsl(257, 27%, 26%);
+  --text-cl: #06010f;
   /* secondary colors */
   --Red: hsl(0, 87%, 67%);
   /* neutral colors */
