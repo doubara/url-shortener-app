@@ -1,0 +1,101 @@
+.form{
+    position: relative;
+    /* position: absolute;
+    top: 0%; */
+    /*
+    top: 44.5%;
+    left: 50%;
+    transform: translate(-50%, -47%); */
+    /* width: 100%; */
+    
+    /* height: auto; */
+    /* display: flex; */
+    /* gap: 1rem; */
+    /* align-items: space-between; */
+    /* justify-content: center; */
+    background-image: url(../../images/bg-boost-desktop.svg);
+    background-color: hsl(257, 27%, 26%);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* sizing styles */
+    padding: 2rem;
+    border-radius: 8px;
+    /* margin: 2rem; */
+
+    /* margin: 0px 2rem; */
+}
+.form_input_container{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.form_input{
+    padding: 1rem 1rem;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+}
+.form_input:hover{
+    background-color: rgb(234, 234, 234);
+}
+.form_input:focus{
+    border: none;
+}
+.form_button{
+    width: 100%;
+    padding: 1rem;
+}
+.form_button:hover{
+    background-color: rgb(151, 204, 211);
+}
+/* @media (max-width: 800px){
+    .form{
+        flex-direction: column;
+        background-image: url(../../images/bg-boost-mobile.svg);
+        padding: 1rem 1rem;
+        gap: .5rem;
+        border: 1px solid red;
+        top:30%;
+    }
+    .form > *{
+        flex-basis: 100%;
+        width: 100%;
+    }
+}
+@media (max-width: 1200px) and (min-width: 798px){
+    .form{
+        top: 43.5%;
+        padding-inline: 1rem;
+        padding-block: 1rem;
+        border: 1px solid aqua;
+    }
+}
+
+@media (max-width: 798px) and (min-width: 560px){
+    .form{
+        top: 40%;
+        padding-inline: 1rem;
+        padding-block: 1rem;
+        border: 2px solid yellow;
+    }
+}
+@media (max-width: 560px){
+    .form{
+        top: 30%;
+        border: 1px solid red;
+    }
+} */
+@media (min-width: 720px){
+    .form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .form_input_container{
+        flex-basis: 70%;
+        margin: 0px 1rem 0px 0px;
+    }
+    .form_button{
+        flex-basis: 30%;
+    }
+}

@@ -1,0 +1,76 @@
+.hero{
+    margin-bottom: 1rem;
+}
+.hero_article{
+    display: grid;
+    padding: 2rem;
+}
+.hero_article *{
+    margin-top: 1rem;
+    text-align: center;
+}
+.hero_article p{
+    line-height: 1.8;
+}
+.hero_article button{
+    padding: 1rem;
+    text-align: center;
+    margin: 1rem auto 0px;
+}
+.heroImageContainer{
+    width: 100%;
+}
+/* @media (max-width: 425px){
+    .hero{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+}
+.hero_article > button{
+    margin-top: 1rem;
+} */
+
+/* desktop */
+@media (min-width: 680px){
+    .hero{
+        display: flex;
+        flex-direction: row-reverse;
+
+    }
+    .hero > *{
+        flex-basis: 50%;
+    }
+    .hero_article{
+        display: block;
+        padding-left: 3rem;
+        /* create a spacing between both */
+        margin-right: 1rem;
+    }
+    .hero_article *{
+        text-align: left;
+        /* cancels the margin top set on mobile */
+        margin: 0;
+    }
+    .hero_article h1{
+        font-size: 3.5rem;
+        font-weight: 800;
+        line-height: 1.2;
+    }
+    .hero_article p{
+        margin: 1rem 0px;
+    }
+}
+/* tablet */
+@media (max-width: 800px){
+    
+    .hero_article{
+        padding-left: 2rem;
+    }
+    .hero_article h1{
+        font-size: 1.5rem;
+        line-height: 1.2;
+    }
+    .hero_article p{
+        line-height: 1.5;
+    }
+}

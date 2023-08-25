@@ -1,0 +1,136 @@
+.nav{
+    /*flexbox styles*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-direction: row; */
+    /* spacing styles */
+    /* max-width: 800px; */
+    padding: 2rem 1rem;
+    /* position styles */
+    position: relative;
+    
+}
+
+.listContainer{
+    /* margin-inline: auto; */
+    display: flex;
+    flex-direction: inherit;
+    justify-content: space-between;
+    align-items: center;
+    /* the flex basis is set to 100 in order that it fills the available space */
+    flex-basis: 100%;
+    margin-left: 1rem;
+}
+.list{
+    display: flex;
+}
+.list li{
+    margin-left: 1.5rem;
+}
+
+.buttonContainer{
+    justify-self: flex-end;
+    
+}
+.buttonContainer button{
+    margin-left: 1.5rem;
+}
+.hamBurger{
+    display: none;
+    background: none;
+}
+.hamBurger > div{
+    border: 1px solid black;
+    
+}
+.hamBurger > div:not(:last-of-type){
+    margin-bottom: .3rem;
+}
+
+/* Lets makke it responsive */
+/* 1. Desktop */
+
+/* 2. Tablet */
+@media (max-width: 780px){
+    .nav *{
+        font-size: 16px;
+    }
+}
+
+/* 3. Mobile */
+
+@media (max-width: 680px) {
+    .nav{
+        flex-wrap: wrap;
+    }
+    .listContainer{
+        /* countering desktop level spacings: applies margin to the top and removes margin aroun the menu box*/
+        margin: 1rem 0px 0px;
+        /* dimension styles */
+        flex-basis: 100%;
+        min-height: 380px;
+        padding: 3.5rem 2rem;
+        /* flex styles */
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        /* appearance styles */
+        background-color: hsl(257, 27%, 26%);
+        border-radius: 10px;
+        /* dimension styles */
+        width: 100%;
+    }
+    .listContainer *{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    /* List styles */
+    .list{
+        flex-direction: column;
+        text-align: center;
+        font-size: 20px;
+        width: 100%;
+    }
+    .list li{
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+    .list li{
+        margin-left: 0px;
+    }
+    .buttonContainer{
+        /* flex styles */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* dimension styles */
+        width: 100%;
+        /* spacing styles */
+        border-top: 1px solid rgba(110, 109, 109);
+        padding: .5rem 1rem;
+        text-align: center;
+    }
+    .buttonContainer button{
+        margin-top: .5rem;
+        padding: 1rem .5rem;
+        width: 100%;
+    }
+    
+    /* Hamburger button styles */
+    .hamBurger{
+        display: block;
+        width: 50px;
+    }
+    .hamBurger:hover{
+        cursor: pointer;
+    }
+    .hamBurger:hover div{
+        border: 1px solid grey;
+    }
+    /* Mobile toggle class */
+    .show{
+        display: flex;
+    }
+}

@@ -1,0 +1,73 @@
+
+/* CSS resets */
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+  margin: 0;
+}
+/* custom css colors */
+:root{
+  /* primary colors */
+  --button-cl: hsl(180, 66%, 49%);
+  --text-cl: hsl(257, 27%, 26%);
+  /* secondary colors */
+  --Red: hsl(0, 87%, 67%);
+  /* neutral colors */
+  --Gray: hsl(0, 0%, 75%);
+  --Grayish-Violet: hsl(257, 7%, 63%);
+  --Very-Dark-Blue: hsl(255, 11%, 22%);
+  --Very-Dark-Violet: hsl(260, 8%, 14%);
+}
+/* typography styles*/
+body{
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1,h2{
+  font-weight: 700;
+  font-size: 2rem;
+}
+h3,h4,h5,h6,p,li,ol{
+  font-weight: 500;
+}
+p,li{
+  color: var(--text-cl);
+  font-size: 18px;
+}
+@media (max-width: 400px){
+  li, button{
+    color: white;
+  }
+}
+button{
+  background-color: var(--button-cl);
+  border: none;
+  color: white;
+  padding: .3rem .5rem;
+  border-radius: 8px;
+  font: inherit;
+  font-size: 16px;
+}
+.submit_button{
+  padding: .2rem .3rem;
+}
+/* resets */
+a{
+  text-decoration: none;
+  color: inherit;
+}
+img,picture{
+  max-width: 100%;
+  height: auto;
+}
+/* styles */
+.login-btn{
+  background-color: transparent;
+  color: var(--text-cl);
+}
+@media (max-width: 425px){
+  .login-btn{
+    color: white;
+  }
+}

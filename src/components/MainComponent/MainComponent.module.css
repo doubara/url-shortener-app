@@ -1,0 +1,11 @@
+.main{
+    position: relative;
+    background-color: rgb(192, 191, 191);
+    padding: 2rem;
+}
+
+@media (max-width: 800px){
+    .main > *{
+        padding-inline: 2rem;
+    }
+}
