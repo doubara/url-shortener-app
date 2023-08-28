@@ -11,7 +11,7 @@ const TestimonialCard = (props)=>{
 return <div className={`${style.testimonial_card}`}>
         <div className={style.card_img_container}>
             {/* <img src={props.value.img} alt=""/> */}
-        <img src={imgObject[props.src]}/>
+        <img src={imgObject[props.src]} alt=""/>
         </div>
         <h3>{props.title}</h3>
         <p>{props.body}</p>

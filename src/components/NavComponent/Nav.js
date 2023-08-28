@@ -2,7 +2,6 @@ import List from "../ListComponent/List";
 import Button from '../ButtonComponent/Button';
 import logo from '../../images/logo.svg';
 import style from './Nav.module.css';
-import hamburger from '../../images/icon-fully-customizable.svg';
 import {useState} from 'react';
 
 const Nav = (props)=>{

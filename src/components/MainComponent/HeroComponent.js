@@ -1,5 +1,4 @@
 import img from '../../images/illustration-working.svg';
-import Button from '../ButtonComponent/Button';
 import style from './HeroComponent.module.css';
 
 const HeroComponent = (props)=>{
